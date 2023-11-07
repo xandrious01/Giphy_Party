@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body style="background-image: linear-gradient(
+  130deg,
+  hsl(218deg 85% 8%) 12%,
+  hsl(216deg 86% 10%) 49%,
+  hsl(214deg 95% 11%) 61%,
+  hsl(214deg 100% 13%) 68%,
+  hsl(214deg 100% 15%) 73%,
+  hsl(215deg 100% 17%) 77%,
+  hsl(215deg 100% 19%) 81%,
+  hsl(216deg 99% 21%) 85%,
+  hsl(218deg 90% 24%) 100%
+); 
+height: 100%;
+margin: 0;
+background-repeat: no-repeat;
+background-attachment: fixed">
+
+<div class="container margin-auto">
+<h1 class="display-1 d-flex justify-content-center my-5 text-light">Giphy Party!</h1>
+  <div class="d-flex justify-content-center my-3">
+    <div>
+      <form id="searchForm">
+      <label for="searchInput" class="text-light">Enter search term:</label>
+      <input type="text" id="searchInput" name="gifSearch" class="bg-dark text-light">
+      <button type="submit" id="submitBtn" class="btn btn-light">Find me a GIF!</button>
+      </form>
+    </div>
+  </div>
+<div class="d-flex justify-content-center my-2">
+    <button type="button" id="startOver" class="btn btn-secondary">Start Over</button>
+</div>
+
+
+<div id="gifs" class="mx-6 d-flex justify-content-around flex-wrap">
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
